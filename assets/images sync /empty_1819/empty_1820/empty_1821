@@ -1,0 +1,59 @@
+var map = {
+	"./arrow-down-blue.svg": 584,
+	"./arrow-down-grey.svg": 585,
+	"./arrow-right-white.png": 586,
+	"./arrow-right.svg": 587,
+	"./big_unicorn.png": 250,
+	"./blue-loader.svg": 251,
+	"./circle-grey.svg": 588,
+	"./circle.svg": 589,
+	"./coinbaseWalletIcon.svg": 162,
+	"./dropdown-blue.svg": 590,
+	"./dropdown.svg": 591,
+	"./dropup-blue.svg": 592,
+	"./ethereum-logo.png": 252,
+	"./fortmaticIcon.png": 163,
+	"./link.svg": 593,
+	"./logo.png": 160,
+	"./magnifying-glass.svg": 594,
+	"./menu.svg": 595,
+	"./metamask.png": 166,
+	"./noise.png": 253,
+	"./plus-blue.svg": 596,
+	"./plus-grey.svg": 597,
+	"./portisIcon.png": 164,
+	"./question-mark.svg": 598,
+	"./question.svg": 599,
+	"./spinner.svg": 600,
+	"./sushiswap-icon.png": 254,
+	"./token-list-logo.png": 601,
+	"./token-list/lists-dark.png": 602,
+	"./token-list/lists-light.png": 603,
+	"./token-logo.png": 604,
+	"./tokenlistsgrouped.png": 605,
+	"./trustWallet.png": 606,
+	"./uniswap-icon.png": 255,
+	"./walletConnectIcon.svg": 165,
+	"./x.svg": 607,
+	"./xl_uni.png": 256
+};
+
+
+function webpackContext(req) {
+	var id = webpackContextResolve(req);
+	return __webpack_require__(id);
+}
+function webpackContextResolve(req) {
+	if(!__webpack_require__.o(map, req)) {
+		var e = new Error("Cannot find module '" + req + "'");
+		e.code = 'MODULE_NOT_FOUND';
+		throw e;
+	}
+	return map[req];
+}
+webpackContext.keys = function webpackContextKeys() {
+	return Object.keys(map);
+};
+webpackContext.resolve = webpackContextResolve;
+module.exports = webpackContext;
+webpackContext.id = 226;
